@@ -21,6 +21,8 @@ Target Android API Level 19 (Android 4.4 Kitkat )
 - Gson - Api Response Data 파싱을 위해 사용
 
 # Fixed Issue
+- API 를 호출하는 동안 빈 화면이 표시되는 문제
+	- Splash Image를 추가하고 API 호출이 끝날때 Splash Image를 숨기는 로직을 추가하여 빈 화면이 표시되는 시간을 최소화 
 - Gson을 이용한 Json 맵핑 과정에서 Response Data에 "Abstact"라는 필드가 존재하여 맵핑 클래스 설계에 문제 발생
 	- 맵핑 클래스에 abstact 대신 abstactString 변수를 선언 하고 Response Data의 "abstact" 문자열을 "abstactString"으로 치환 후 파싱하도록 수정
 - WebView에서 페이지를 Load하는 중 Redicretion된 Url을 WebView가 자체적으로 암시적 인텐트(Action_View)를 이용해 브라우저로 오픈하는 문제 발생
