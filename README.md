@@ -5,6 +5,7 @@ New York Times Mobile Viewer Android Application
 Target Android API Level 19 (Android 4.4 Kitkat )
 
 # Features
+ - Splash Image
  - New York Times Api 호출 및 Response Data 파싱
  - Grid View를 이용한 뉴스 기사 리스트 출력
  - Async Task를 이용한 Web Image 획득
