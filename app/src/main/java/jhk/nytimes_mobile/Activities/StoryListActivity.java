@@ -107,6 +107,8 @@ public class StoryListActivity extends AppCompatActivity implements AsyncTaskCal
             if(data.multimedia.size() != 0)
                 adapter.add(data);
         }
+
+        findViewById(R.id.splash_img).setVisibility(View.GONE);
     }
 
     /**

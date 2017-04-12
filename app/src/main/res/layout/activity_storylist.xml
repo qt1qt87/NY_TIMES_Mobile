@@ -5,11 +5,14 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="3dp"
-    android:paddingLeft="3dp"
-    android:paddingRight="3dp"
-    android:paddingTop="3dp"
     tools:context="jhk.nytimes_mobile.Activities.StoryListActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/times_black"
+        android:id="@+id/splash_img" />
+
     <com.etsy.android.grid.StaggeredGridView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -17,6 +20,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:column_count="@integer/column_count"
-        app:item_margin="8dp"
-        />
+        app:item_margin="8dp" />
 </RelativeLayout>
