@@ -32,10 +32,9 @@ Target Android API Level 19 (Android 4.4 Kitkat )
 # ISSUE
 - GridView를 빠르게 움직일 때 AsyncTask Cancel 기능으로 인해 BitmapFactory.decodeStream() 함수 내부에서 thread interrupted Exception 발생
 	- 현재로썬 BitmapFactory.decodeStream() 함수가 Exception을 외부로 throw하지 않기 때문에 예외 처리를 하지 못하고 있음.
-
+	
 # TODO
-- 스플래시 화면 추가
-	- 스플래시 이미지가 표시되는 동안 백그라운드에서 뉴스기사를 조회하면 초기 앱 실행 화면을 더욱 자연스럽게 있을것이라 생각함
+- 스플래시 화면 표시 시간 개선
 - 네트워크 상태 체크 로직 강화
 	- 현재 StoryList를 조회 하기 전에만 인터넷 상태를 체크하여 메세지를 표시하는데 브로드케스트를 이용하여 네트워크 상태 변경에 따라 즉각적으로 UI를 통해 표시되는것이 좋을것 같다고 생각함
 - 캐시 로직 고도화
