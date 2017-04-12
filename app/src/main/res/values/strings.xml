@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NYTimes_Mobile</string>
+    <string name="ny_times_api_url">https://api.nytimes.com/svc/topstories/v2/home.json?api-key=cf23f0334a174fff975fc2400ccbfdd9</string>
+    <string name="ny_times_default_url">https://www.nytimes.com</string>
+
+    <string name="intent_extra_key_url">URL</string>
+</resources>

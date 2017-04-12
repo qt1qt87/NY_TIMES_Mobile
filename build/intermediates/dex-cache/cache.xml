@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_00f4d2cab9c0ea8ad896bdfed70b1539af71184d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_087b3342b9b4bcb22034947eb074bae63061c131\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Project\RG_HOME\Android\NY_TIMES_Mobile\app\build\intermediates\exploded-aar\com.etsy.android.grid\library\1.0.5\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8218789edb56bdcfff7da48e892b37460fc707e2">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TIMES_Mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.etsy.android.grid-library-1.0.5_fce1e788829ea615d3f84e6a270dcb0312cec39a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Util\Android_SDK\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_46fadde08e99913ca0ef309813804b5ce78f5db3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Project\RG_HOME\Android\NY_TIMES_Mobile\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TIMES_Mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_ba4b5e1d7c4058cda3ade704ed2d88d44fda0b2b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_ecf9c2055e3b828af572fb547405e50301b3fcc7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_02a6373a8065738f07a44fa5e3597f386d41feb3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\한구\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.3.1\ecb6e1f8e4b0e84c4b886c2f14a1500caf309757\gson-2.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.3.1_83b5c4a608c1d61043e2a9fca84a30b613d20a03\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d050f393cce69e8537eb5753319a28da19943fc4">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_dbaa1a242c4d4bdc6e38fe5d7245729527d1c622\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_442a6ba2ddda6bd7c1d42a8b7c071b755d6ed3df\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Project\RG_HOME\Android\NY_TIMES_Mobile\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TIMES_Mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_79ef1f2d930a6e23ffe8919dcb6541ace85bf2b3\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Project\RG_HOME\Android\NY_TIMES_Mobile\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TIMES_Mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_9b90a4ec5dc8929b2c4a24f5d86f2c3338cb6d36\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Project\RG_HOME\Android\NY_TIMES_Mobile\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ff635d48e5af4c15df553e4e107857ecac1d1e7a">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TIMES_Mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_49b3f7b966cda4e8c2dce705aa318471a6bae146\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ff21123f0a2a46eb48ad0ea5948806d212896e4b">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_5a7c6bae741ace133b9c7b95ff96cfff319bb7cb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Project\RG_HOME\Android\NY_TIMES_Mobile\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TIMES_Mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_38ef03ee0d9cbffd62576309e1244829d46d0179\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Project\RG_HOME\Android\NY_TIMES_Mobile\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TIMES_Mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_95479072c89c82089324e71b7c312d63cb6e39fa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Project\RG_HOME\Android\NY_TIMES_Mobile\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7dca5d5e155e3bed01c189b10175c49382643fb7">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TIMES_Mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_9c5e699df109cb28d3939340350cdbb7bb2b27d7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\exploded-aar\com.etsy.android.grid\library\1.0.5\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8218789edb56bdcfff7da48e892b37460fc707e2">
+        <dex dex="G:\Project\RG_HOME\Android\NY_TimesMobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.etsy.android.grid-library-1.0.5_cb5ddbd97081f32d1a6ee0261779a1fda371e1ec\classes.dex" />
+    </item>
+
+</items>
