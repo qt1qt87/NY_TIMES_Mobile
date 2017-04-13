@@ -35,8 +35,9 @@ Target Android API Level 19 (Android 4.4 Kitkat )
 - **Picasso Library 적용으로 상위 2가지 이슈 해결 방법 변경**
 
 # ISSUE
-- GridView를 빠르게 움직일 때 AsyncTask Cancel 기능으로 인해 BitmapFactory.decodeStream() 함수 내부에서 thread interrupted Exception 발생
-	- 현재로썬 BitmapFactory.decodeStream() 함수가 Exception을 외부로 throw하지 않기 때문에 예외 처리를 하지 못하고 있음.
+- ~~GridView를 빠르게 움직일 때 AsyncTask Cancel 기능으로 인해 BitmapFactory.decodeStream() 함수 내부에서 thread interrupted Exception 발생~~
+	- ~~현재로썬 BitmapFactory.decodeStream() 함수가 Exception을 외부로 throw하지 않기 때문에 예외 처리를 하지 못하고 있음.~~
+- **Picasso Library 적용으로 상위 1가지 이슈 해결 **
 	
 # TODO
 - 스플래시 화면 표시 시간 개선
