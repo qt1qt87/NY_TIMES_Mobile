@@ -9,10 +9,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import java.util.HashMap;
 import java.util.Random;
 
 import jhk.nytimes_mobile.Interfaces.AsyncTaskCallBack;
+import jhk.nytimes_mobile.Objects.ImageCache;
 import jhk.nytimes_mobile.Objects.MultiMediaData;
 import jhk.nytimes_mobile.Objects.StoryData;
 import jhk.nytimes_mobile.R;
@@ -35,9 +35,6 @@ public class StoryCard extends LinearLayout implements View.OnClickListener, Asy
 
     //Image Load Async Task
     private LoadImageFromUrlTask imageLoadTasker = null;
-
-    //Static Image Cache
-    static HashMap<String, Bitmap> ImageCache = new HashMap<>();
 
     /**
      * New Card의 이미지 Type
@@ -141,8 +138,8 @@ public class StoryCard extends LinearLayout implements View.OnClickListener, Asy
             if (mData.format.equals("Normal")) {
 
                 // 기존에 로드된 이미지가 있는지 체크
-                if (ImageCache.containsKey(mData.url))
-                    setImage(ImageCache.get(mData.url));
+                if (ImageCache.GetInstance().containsKey(mData.url))
+                    setImage(ImageCache.GetInstance().get(mData.url));
                 else {
                     imageLoadTasker = new LoadImageFromUrlTask(this);
                     imageLoadTasker.execute(mData.url);
@@ -240,7 +237,7 @@ public class StoryCard extends LinearLayout implements View.OnClickListener, Asy
         Object[] results = (Object[]) result;
         String bmpUrl = (String) results[0];
         Bitmap bmp = (Bitmap) results[1];
-        ImageCache.put(bmpUrl, bmp);
+        ImageCache.GetInstance().put(bmpUrl, bmp);
         setImage(bmp);
     }
 }
