@@ -2,6 +2,8 @@ package jhk.nytimes_mobile.View;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,19 +11,19 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.squareup.picasso.Picasso;
+import com.squareup.picasso.Target;
+
 import java.util.Random;
 
-import jhk.nytimes_mobile.Interfaces.AsyncTaskCallBack;
-import jhk.nytimes_mobile.Objects.ImageCache;
 import jhk.nytimes_mobile.Objects.MultiMediaData;
 import jhk.nytimes_mobile.Objects.StoryData;
 import jhk.nytimes_mobile.R;
-import jhk.nytimes_mobile.Tasks.LoadImageFromUrlTask;
 
 /**
  * Story Card View
  */
-public class StoryCard extends LinearLayout implements View.OnClickListener, AsyncTaskCallBack {
+public class StoryCard extends LinearLayout implements View.OnClickListener ,Target{
 
     //텍스브 박스 백그라운드 컬러 설정을 위한 변수
     private Random random = null;
@@ -32,9 +34,6 @@ public class StoryCard extends LinearLayout implements View.OnClickListener, Asy
 
     //News Data
     private StoryData storyData = null;
-
-    //Image Load Async Task
-    private LoadImageFromUrlTask imageLoadTasker = null;
 
     /**
      * New Card의 이미지 Type
@@ -111,10 +110,6 @@ public class StoryCard extends LinearLayout implements View.OnClickListener, Asy
 
         storyData = data;
 
-        //기존 작업 중단
-        if (imageLoadTasker != null)
-            imageLoadTasker.cancel(true);
-
         //View 초기화
         setImage(null);
         setText("");
@@ -136,19 +131,26 @@ public class StoryCard extends LinearLayout implements View.OnClickListener, Asy
         //Normal Size Image를 찾아 Image View에 설정
         for (MultiMediaData mData : storyData.multimedia) {
             if (mData.format.equals("Normal")) {
-
-                // 기존에 로드된 이미지가 있는지 체크
-                if (ImageCache.GetInstance().containsKey(mData.url))
-                    setImage(ImageCache.GetInstance().get(mData.url));
-                else {
-                    imageLoadTasker = new LoadImageFromUrlTask(this);
-                    imageLoadTasker.execute(mData.url);
-                }
-
+                Picasso.with(getContext()).load(mData.url).error(R.drawable.error_image).into(this);
             }
         }
     }
 
+    @Override
+    public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {
+        setImage(bitmap);
+    }
+
+    @Override
+    public void onBitmapFailed(Drawable errorDrawable) {
+        BitmapDrawable drawable = (BitmapDrawable) errorDrawable;
+        Bitmap bitmap = drawable.getBitmap();
+        imageView.setImageBitmap(bitmap);
+    }
+
+    @Override
+    public void onPrepareLoad(Drawable placeHolderDrawable) {
+    }
 
     /**
      * 카드 이미지 변경 함수
@@ -225,19 +227,5 @@ public class StoryCard extends LinearLayout implements View.OnClickListener, Asy
 
         v.setTag(storyData.url);
         onTitleClickListener.onClick(v);
-    }
-
-    /**
-     * Async Task CallBack
-     *
-     * @param result Bitmap Image
-     */
-    @Override
-    public void asyncTaskCallBack(Object result) {
-        Object[] results = (Object[]) result;
-        String bmpUrl = (String) results[0];
-        Bitmap bmp = (Bitmap) results[1];
-        ImageCache.GetInstance().put(bmpUrl, bmp);
-        setImage(bmp);
     }
 }
