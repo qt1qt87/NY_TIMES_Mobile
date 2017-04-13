@@ -8,8 +8,8 @@ Target Android API Level 19 (Android 4.4 Kitkat )
  - Splash Image
  - New York Times Api 호출 및 Response Data 파싱
  - Grid View를 이용한 뉴스 기사 리스트 출력
- - Async Task를 이용한 Web Image 획득
- - Image Chaching을 통한 성능 향상
+ - Async Task를 이용한 Web Image 출력
+ - Image 캐시를 이용한 성능 향상
  - 뉴스 기사 타이틀 클릭시 상세 보기로 이동
 
 # Activities
@@ -30,7 +30,7 @@ Target Android API Level 19 (Android 4.4 Kitkat )
 - GridView를 빠르게 움직일 때 하나의 Image View에 대해 이미지를 로드하는 Async Task가 여러개 생성 되는 문제 발생
     - GridViewItem클래스에 Async Task를 종속 시켜 새로운 이미지를 로드하는 Task가 시작 되기 전에 기존 Task를 Cancel하도록 수정
 - GridView가 스크롤 될 때 마다 마다 이미지를 로드하다 보니 빈 이미지가 자주 표시되는 문제 발생
-     - Static 변수로 Image Cahce를 두어 로드된 적 있는 이미지일 경우 캐시 이미지를 사용하도록 변경
+     - Static 변수로 Image 캐시를 두어 로드된 적 있는 이미지일 경우 캐시 이미지를 사용하도록 변경
      
 # ISSUE
 - GridView를 빠르게 움직일 때 AsyncTask Cancel 기능으로 인해 BitmapFactory.decodeStream() 함수 내부에서 thread interrupted Exception 발생
@@ -41,7 +41,8 @@ Target Android API Level 19 (Android 4.4 Kitkat )
 - 네트워크 상태 체크 로직 강화
 	- 현재 StoryList를 조회 하기 전에만 인터넷 상태를 체크하여 메세지를 표시하는데 브로드케스트를 이용하여 네트워크 상태 변경에 따라 즉각적으로 UI를 통해 표시되는것이 좋을것 같다고 생각함
 - 캐시 로직 고도화
-     - 효율적으로 캐시 버퍼 메모리를 사용하도록 변경
+     - 싱글톤으로 
+     - 효율적으로 캐시 버퍼 메모리를 사용하도록 변경
      - 최대 버퍼 크기 설정하고 버퍼가 가득 차게 되면 최근 사용 기록이 없는 이미지 캐시를 삭제
 - API Result 맵핑 객체로 필드중 Enum으로 변경할수 있는 것들을 변경
 	-  맵핑 객체로 설계하는 과정에서 몇가지 Enum형태가 적당한 필드들이 있었는데 Enum 전체 리스트를 파악하지못해 우선 String으로 구현함
