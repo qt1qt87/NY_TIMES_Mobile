@@ -132,6 +132,7 @@ public class StoryCard extends LinearLayout implements View.OnClickListener ,Tar
         for (MultiMediaData mData : storyData.multimedia) {
             if (mData.format.equals("Normal")) {
                 Picasso.with(getContext()).load(mData.url).error(R.drawable.error_image).into(this);
+                break;
             }
         }
     }
