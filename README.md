@@ -29,15 +29,15 @@ Target Android API Level 19 (Android 4.4 Kitkat )
 - WebView에서 페이지를 Load하는 중 Redicretion된 Url을 WebView가 자체적으로 암시적 인텐트(Action_View)를 이용해 브라우저로 오픈하는 문제 발생
 	-  WebViewClient의 shouldOverrideUrlLoading() 함수를 오버라이딩 하여 해결 
 - ~~GridView를 빠르게 움직일 때 하나의 Image View에 대해 이미지를 로드하는 Async Task가 여러개 생성 되는 문제 발생~~
-    - ~~GridViewItem클래스에 Async Task를 종속 시켜 새로운 이미지를 로드하는 Task가 시작 되기 전에 기존 Task를 Cancel하도록 수정~~
+	- ~~GridViewItem클래스에 Async Task를 종속 시켜 새로운 이미지를 로드하는 Task가 시작 되기 전에 기존 Task를 Cancel하도록 수정~~
 - ~~GridView가 스크롤 될 때 마다 마다 이미지를 로드하다 보니 빈 이미지가 자주 표시되는 문제 발생~~
-     - ~~Static 변수로 Image 캐시를 두어 로드된 적 있는 이미지일 경우 캐시 이미지를 사용하도록 변경~~
+	- ~~Static 변수로 Image 캐시를 두어 로드된 적 있는 이미지일 경우 캐시 이미지를 사용하도록 변경~~
 - **Picasso Library 적용으로 상위 2가지 이슈 해결 방법 변경**
 
 # ISSUE
 - ~~GridView를 빠르게 움직일 때 AsyncTask Cancel 기능으로 인해 BitmapFactory.decodeStream() 함수 내부에서 thread interrupted Exception 발생~~
 	- ~~현재로썬 BitmapFactory.decodeStream() 함수가 Exception을 외부로 throw하지 않기 때문에 예외 처리를 하지 못하고 있음.~~
-- **Picasso Library 적용으로 상위 1가지 이슈 해결 **
+- **Picasso Library 적용으로 상위 1가지 이슈 해결**
 	
 # TODO
 - 스플래시 화면 표시 시간 개선
